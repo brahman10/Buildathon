@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".LoginActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgicon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:layout_above="@+id/etPassword"
+            android:layout_below="@+id/imgicon"
+            android:layout_centerHorizontal="true"
+            android:padding="2dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="35dp">
+            <EditText
+                android:id="@+id/etMobile"
+                android:layout_width="250dp"
+                android:fontFamily="@font/bold"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:textColorHint="@color/white"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/mobile"
+                android:ems="10"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:layout_alignStart="@+id/etMobile"
+            android:padding="2dp"
+            android:layout_alignLeft="@+id/etMobile"
+            android:layout_alignBottom="@+id/cardView"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp">
+            <EditText
+                android:id="@+id/etPassword"
+                android:fontFamily="@font/bold"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:textColorHint="@color/white"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/key"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/login"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            app:cardBackgroundColor="@color/card_color"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bold"
+                    android:layout_centerInParent="true"
+                    android:text="Login"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:height="40dp"
+                android:fontFamily="@font/bold"
+                android:id="@+id/register"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Register Here"/>
+            <TextView
+                android:layout_width="0dp"
+                android:height="40dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/bold"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:id="@+id/forgotPass"
+                android:textColor="@color/white"
+                android:gravity="end"
+                android:text="Forgot Password?"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Buildathon</string>
+    <string-array name="branch">
+        <item>Computer Science and Engineering</item>
+        <item>Chemical Engineering</item>
+        <item>Civil Engineering</item>
+        <item>Electronics and Communication Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Information and Tchnology</item>
+        <item>Mechanical Engineering</item>
+    </string-array>
+    <string-array name="employ_type">
+        <item>Employment type
+        </item>
+        <item>Full-time</item>
+        <item>Part-time</item>
+        <item>Internship</item>
+        <item>Trainee</item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

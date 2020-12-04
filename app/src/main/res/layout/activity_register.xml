@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imgicon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/verify" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buildathon"
+        android:id="@+id/txtName"
+        android:fontFamily="@font/bold"
+        android:textColor="@color/white"
+        android:layout_below="@+id/imgicon"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OTP Verification"
+        android:id="@+id/txtOTP"
+        android:fontFamily="@font/bold"
+        android:textColor="@color/white"
+        android:layout_below="@+id/txtName"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ll_number"
+        android:layout_below="@+id/txtOTP"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/bold"
+            android:text="Enter a valid Mobile number to recieve OTP"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:layout_above="@+id/etPassword"
+            android:layout_below="@+id/imgicon"
+            android:layout_centerHorizontal="true"
+            android:padding="2dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="35dp">
+            <EditText
+                android:id="@+id/etMobile"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:fontFamily="@font/bold"
+                android:textColorHint="@color/white"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/mobile"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/submit"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            app:cardBackgroundColor="@color/card_color"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Submit"
+                    android:fontFamily="@font/bold"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ll_otp"
+        android:visibility="gone"
+        android:layout_below="@+id/txtOTP"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/bold"
+            android:text="Enter OTP"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:layout_above="@+id/etPassword"
+            android:layout_below="@+id/imgicon"
+            android:layout_centerHorizontal="true"
+            android:padding="2dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="35dp">
+            <EditText
+                android:id="@+id/etOtp"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:fontFamily="@font/bold"
+                android:textColorHint="@color/white"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/mobile"
+                android:hint="OTP"
+                android:inputType="number"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/register"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            app:cardBackgroundColor="@color/card_color"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Register"
+                    android:fontFamily="@font/bold"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

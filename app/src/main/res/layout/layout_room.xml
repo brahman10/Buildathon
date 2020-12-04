@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:id="@+id/room"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="100dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/bold"
+            android:text="JAVA"
+            android:padding="5dp"
+            android:id="@+id/room_name"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray"
+                android:id="@+id/room_desc"
+                android:fontFamily="@font/bold"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:text="What is JAVA?"/>
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:id="@+id/room_created"
+                android:layout_toRightOf="@+id/room_desc"
+                android:fontFamily="@font/bold"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textAlignment="gravity"
+                android:text="Yash"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

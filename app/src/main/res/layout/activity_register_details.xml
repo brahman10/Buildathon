@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgicon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imgicon"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Register"
+            android:fontFamily="@font/bold"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textAlignment="center"
+            android:layout_marginBottom="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:padding="2dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp">
+            <EditText
+                android:id="@+id/etName"
+                android:fontFamily="@font/bold"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:textColorHint="@color/white"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/name"
+                android:ems="10"
+                android:hint="Enter Name"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:layout_above="@+id/etPassword"
+            android:layout_below="@+id/imgicon"
+            android:layout_centerHorizontal="true"
+            android:padding="2dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="35dp">
+            <EditText
+                android:id="@+id/etMobile"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/bold"
+                android:layout_height="40dp"
+                android:background="#11000000"
+                android:textColorHint="@color/white"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/mobile"
+                android:ems="10"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/etMobile"
+            android:padding="2dp"
+            app:passwordToggleEnabled="true"
+            android:layout_alignLeft="@+id/etMobile"
+            android:textColorHint="@color/white"
+            android:outlineAmbientShadowColor="@color/white"
+            android:outlineSpotShadowColor="@color/white"
+            android:layout_alignBottom="@+id/cardView"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp">
+            <EditText
+                android:id="@+id/etPassword"
+                android:fontFamily="@font/bold"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/border"
+                android:textColorHint="@color/white"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/etMobile"
+            android:padding="2dp"
+            app:passwordToggleEnabled="true"
+            android:layout_alignLeft="@+id/etMobile"
+            android:textColorHint="@color/white"
+            android:outlineAmbientShadowColor="@color/white"
+            android:outlineSpotShadowColor="@color/white"
+            android:layout_alignBottom="@+id/cardView"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp">
+            <EditText
+                android:id="@+id/etCnfPassword"
+                android:fontFamily="@font/bold"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/border"
+                android:textColorHint="@color/white"
+                android:ems="10"
+                android:hint="Confirm Password"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Register"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            app:cardBackgroundColor="@color/card_color"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bold"
+                    android:layout_centerInParent="true"
+                    android:text="Register"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
